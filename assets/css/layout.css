@@ -116,6 +116,51 @@ footer ul li {
     background-color: var(--white);
 }
 
+.nav-item.dropdown .dropdown-menu {
+    transform: translateY(-40px);
+    background-color: #2a2a2a;
+    border: 1px solid rgba(255,255,255,0.1);
+    min-width: 160px;
+    padding: 0 !important;
+}
+
+.nav-item.dropdown .dropdown-menu a{
+    color: #ffffff !important;
+}
+
+header.sticky .nav-item.dropdown .dropdown-menu {
+    transform: translateY(-30px);
+}
+
+.nav-item.dropdown .dropdown-menu.show {
+    padding: 0;
+}
+.nav-item.dropdown .dropdown-item {
+    color: #ffffff;
+    padding: 0.5rem 1rem !important;
+    font-size: 14px;
+}
+.nav-item.dropdown .dropdown-item:hover {
+    background-color: #2ea7e0;
+    color: #ffffff;
+}
+
+.nav-item.dropdown .dropdown-item:active {
+    background-color: #2ea7e0 !important;
+    color: #ffffff;
+}
+
+.nav-item.dropdown .dropdown-toggle::after {
+    margin-left: 0.5rem;
+}
+.nav-item.dropdown .dropdown-toggle {
+    display: flex;
+    align-items: center;
+}
+.nav-item.dropdown .bi-globe {
+    margin-right: 4px;
+}
+
 @media (max-width: 1399px) {
     header .container-fluid {
         padding-left: 45px; 
