@@ -51,12 +51,25 @@
                                 <li class="nav-item"><a href="#affiliate" class="inner-link nav-link" data-lang-en="Affiliate" data-lang-pt="Afiliados">Affiliate</a></li>
                                 <li class="nav-item"><a href="#market" class="inner-link nav-link" data-lang-en="Market" data-lang-pt="Mercado">Market</a></li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="bi bi-globe"></i> <span id="current-lang">EN</span>
+                                    <a class="inner-link nav-link dropdown-toggle" href="#" id="whitepaperDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-file-earmark-pdf me-3"></i> Whitepaper 
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="whitepaperDropdown">
+                                        <li><a class="dropdown-item" href="assets/files/Vector Pool (VPL) - Whitepaper - English.pdf" target="_blank"><img src="assets/images/flags/United Kingdom(Great Britain).png" alt="English" class="me-2"> English (EN)</a></li>
+                                        <li><a class="dropdown-item" href="assets/files/Vector Pool (VPL) - Whitepaper - Português.pdf" target="_blank"><img src="assets/images/flags/Portugal.png" alt="Portuguese" class="me-2"> Português (PT)</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="inner-link nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-globe me-3"></i> <span id="current-lang">EN</span>
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                                        <li><a class="dropdown-item" href="" onclick="switchLanguage('en')"><img src="assets/images/flags/United Kingdom(Great Britain).png" alt="English" class="me-2"> English (EN)</a></li>
-                                        <li><a class="dropdown-item" href="" onclick="switchLanguage('pt')"><img src="assets/images/flags/Portugal.png" alt="Portuguese" class="me-2"> Português (PT)</a></li>
+                                        <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')">
+                                            <img src="assets/images/flags/United Kingdom(Great Britain).png" alt="English" class="me-2"> English (EN)
+                                        </a></li>
+                                        <li><a class="dropdown-item" href="#" onclick="switchLanguage('pt')">
+                                            <img src="assets/images/flags/Portugal.png" alt="Portuguese" class="me-2"> Português (PT)
+                                        </a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -848,48 +861,88 @@
         <script type="text/javascript" src="assets/js/vendors.min.js"></script>
         <script type="text/javascript" src="assets/js/main.js"></script>
         <script>
-            const translations = {};
-            function collectTranslations() {
-                document.querySelectorAll('[data-lang-en]').forEach(el => {
-                    const key = el.innerText.trim();
-                    translations[key] = {
-                        en: el.getAttribute('data-lang-en'),
-                        pt: el.getAttribute('data-lang-pt')
-                    };
-                });
-            }
-
+            /**
+             * Updates the page content to the selected language.
+             * @param {string} lang - The language code to switch to (e.g., 'en', 'pt').
+             */
             function switchLanguage(lang) {
-                // Update text content
+                // Update text content for all elements with language data attributes
                 document.querySelectorAll('[data-lang-en]').forEach(el => {
-                    el.innerText = el.getAttribute(`data-lang-${lang}`);
+                    const translation = el.getAttribute(`data-lang-${lang}`);
+                    if (translation !== null) { // Check ensures content isn't blanked if translation is missing
+                        el.innerText = translation;
+                    }
                 });
-
-                // Update placeholders
+        
+                // Update placeholder text for input fields
                 document.querySelectorAll('[data-placeholder-en]').forEach(el => {
-                    el.setAttribute('placeholder', el.getAttribute(`data-placeholder-${lang}`));
+                    const placeholderText = el.getAttribute(`data-placeholder-${lang}`);
+                    if (placeholderText !== null) {
+                        el.setAttribute('placeholder', placeholderText);
+                    }
                 });
-
-                // Update btn-double-text
+        
+                // Update text for the special hover-effect buttons
                 document.querySelectorAll('.btn-double-text').forEach(el => {
                     const newText = el.getAttribute(`data-text-${lang}`);
                     if (newText) {
-                         el.setAttribute('data-text', newText);
-                         el.innerText = newText;
+                        // This attribute is likely used by main.js for the hover effect
+                        el.setAttribute('data-text', newText);
+                        el.innerText = newText;
                     }
                 });
-
-                 // Update language switcher display
-                document.getElementById('current-lang').innerText = lang.toUpperCase();
-
-                // Store preference
+        
+                // Update the currently displayed language in the dropdown toggle (e.g., 'EN')
+                const currentLangDisplay = document.getElementById('current-lang');
+                if (currentLangDisplay) {
+                    currentLangDisplay.innerText = lang.toUpperCase();
+                }
+        
+                // Save the user's preference in their browser's local storage for future visits
                 localStorage.setItem('preferredLanguage', lang);
             }
-
-            // On page load
+        
+            // Run scripts after the HTML document has been fully loaded
             document.addEventListener('DOMContentLoaded', () => {
+                // Set the initial language on page load from storage or default to English
                 const preferredLanguage = localStorage.getItem('preferredLanguage') || 'en';
                 switchLanguage(preferredLanguage);
+        
+                // --- Dropdown Menu Handling ---
+                const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+        
+                dropdownToggles.forEach(toggle => {
+                    toggle.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        const menu = this.nextElementSibling;
+                        const parent = this.closest('.dropdown');
+        
+                        // Close all other open dropdowns to prevent clutter
+                        document.querySelectorAll('.dropdown.show').forEach(d => {
+                            if (d !== parent) {
+                                d.classList.remove('show');
+                                d.querySelector('.dropdown-menu').classList.remove('show');
+                            }
+                        });
+        
+                        // Toggle the visibility of the clicked dropdown
+                        menu.classList.toggle('show');
+                        parent.classList.toggle('show');
+                    });
+                });
+        
+                // Add a global click listener to close dropdowns when clicking elsewhere
+                document.addEventListener('click', function(event) {
+                    if (!event.target.closest('.dropdown')) {
+                        document.querySelectorAll('.dropdown.show').forEach(d => {
+                            d.classList.remove('show');
+                            d.querySelector('.dropdown-menu').classList.remove('show');
+                        });
+                    }
+                });
+                
+                // Your HTML's onclick="switchLanguage(...)" attributes will now work correctly
+                // as they call the single, functional switchLanguage function defined above.
             });
         </script>
     </body>
