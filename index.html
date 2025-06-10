@@ -1,0 +1,934 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <title>Vector Pool - Machine Learning and Custom AI Platform</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="author" content="Vector Pool">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="description" content="Vector Pool - Transform your business with custom AI. Create intelligent agents to optimize processes, improve customer service, and drive results.">
+        <!-- favicon icon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- google fonts preconnect -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- style sheets and font icons  -->
+        <link rel="stylesheet" href="assets/css/vendors.min.css"/>
+        <link rel="stylesheet" href="assets/css/icon.min.css"/>
+        <link rel="stylesheet" href="assets/css/style.css"/>
+        <link rel="stylesheet" href="assets/css/responsive.css"/>
+        <link rel="stylesheet" href="assets/css/layout.css"/>
+    </head>
+    <body data-mobile-nav-style="classic" class="custom-cursor">
+        <!-- start cursor -->
+        <div class="cursor-page-inner">
+            <div class="circle-cursor circle-cursor-inner"></div>
+            <div class="circle-cursor circle-cursor-outer"></div>
+        </div>
+        <!-- end cursor -->
+        <!-- start header -->
+        <header> 
+            <!-- start navigation -->
+            <nav class="navbar navbar-expand-lg header-transparent header-dark bg-transparent header-reverse glass-effect border-bottom border-color-transparent-white-light" data-header-hover="dark">
+                <div class="container-fluid">
+                    <div class="col-auto col-xxl-2 col-lg-3 me-lg-0 me-auto">
+                        <a class="navbar-brand" href="#home">
+                            <img src="assets/images/logo-light.svg" alt="Vector Pool Logo" class="default-logo">
+                            <img src="assets/images/logo-light.svg" alt="Vector Pool Logo" class="alt-logo">
+                            <img src="assets/images/logo-light.svg" alt="Vector Pool Logo" class="mobile-logo"> 
+                        </a>
+                    </div>
+                    <div class="col-auto col-xl-8 col-lg-9 menu-order position-static">
+                        <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav"> 
+                            <ul class="navbar-nav"> 
+                                <li class="nav-item"><a href="#home" class="inner-link nav-link">Home</a></li>
+                                <li class="nav-item"><a href="#about" class="inner-link nav-link">About</a></li>
+                                <li class="nav-item"><a href="#agents" class="inner-link nav-link">AI Agents</a></li>
+                                <li class="nav-item"><a href="#staking" class="inner-link nav-link">Staking</a></li>
+                                <li class="nav-item"><a href="#affiliate" class="inner-link nav-link">Affiliate</a></li>
+                                <li class="nav-item"><a href="#market" class="inner-link nav-link">Market</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto col-xxl-2 text-end d-none d-xl-flex">
+                        <div class="header-icon">
+                            <div class="header-button">
+                                <a href="#" class="btn btn-small btn-base-color btn-rounded btn-box-shadow btn-switch-text">
+                                    <span>
+                                        <span class="btn-double-text" data-text="Get Started">Get Started</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </nav>
+            <!-- end navigation -->
+        </header>
+        <!-- end header -->
+        <!-- start section -->
+        <section id="home" class="bg-light-gray cover-background" style="background-image: url('assets/images/hero-bg.jpg')">
+            <div class="position-absolute left-70px mt-2 d-none d-xl-inline-block" data-parallax-liquid="true" data-parallax-transition="2" data-parallax-position="top">
+                <img src="assets/images/machine-learning/machine-learning-icon-01.svg" width="195" alt="" data-bottom-top="transform: rotate(-30deg)" data-top-bottom="transform:rotate(10deg)">
+            </div>
+            <div class="position-absolute mt-10 right-80px xxl-right-0px d-none d-xl-inline-block" data-parallax-liquid="true" data-parallax-transition="2" data-parallax-position="bottom">
+                <img src="assets/images/machine-learning/machine-learning-icon-15.svg" width="283" alt="" data-bottom-top="transform: rotate(-60deg)" data-top-bottom="transform:rotate(60deg)">
+            </div>
+            <div class="position-absolute bottom-0 xl-bottom-120px left-0 ms-12 xxl-ms-5 mb-25 xxl-mb-30 d-none d-xl-inline-block" data-parallax-liquid="true" data-parallax-transition="2" data-parallax-position="bottom">
+                <img src="assets/images/machine-learning/machine-learning-icon-14.svg" width="250" alt="" data-bottom-top="transform: rotate(-30deg)" data-top-bottom="transform:rotate(60deg)">
+            </div>
+            <div class="container position-relative">
+                <div class="row pt-12 mb-14 xxl-pt-10 xl-pt-6 xxl-mb-10 sm-pt-70px xs-mb-35px">
+                    <div class="col text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <div class="fs-80 lg-fs-70 md-fs-60 fw-600 ls-minus-2px mb-25px text-white">Your <div class="highlight-separator z-index-1" data-shadow-animation="true" data-animation-delay="500">Exclusive<span><img src="assets/images/highlight-separator.svg" alt="" class="h-25px"></span></div> AI Agent</div>
+                        <p class="fs-20 fw-300 w-55 lg-w-70 md-w-100 mx-auto mb-0">Create your own private AI agent with exclusive access to your data. No sharing, no compromises. Your data stays yours, your agent works only for you.</p>
+                        <div class="d-flex align-items-center justify-content-center flex-wrap mt-70px xs-mt-30px">
+                            <a href="#agents" class="btn btn-extra-large btn-base-color btn-rounded d-inline-block me-30px xs-me-10px btn-box-shadow btn-switch-text sm-mt-10px sm-mb-10px section-link">
+                                <span>
+                                    <span class="btn-double-text" data-text="Create my agent">Create my agent</span>
+                                </span>
+                            </a>
+                            <a href="#about" class="text-center d-inline-flex sm-mt-10px sm-mb-10px rounded-circle video-icon-box video-icon-medium popup-vimeo position-relative text-uppercase">
+                                <span class="video-icon bg-extra-medium-gray me-15px">
+                                    <i class="fa-solid fa-play text-base-color"></i>
+                                    <span class="video-icon-sonar">
+                                        <span class="video-icon-sonar-afr bg-white"></span>
+                                    </span>
+                                </span>
+                                <span class="text-white fs-16">Learn more</span>
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+                <div class="row mb-14 xxl-mb-10 justify-content-center g-0">
+                    <div class="col-md-auto col-sm-10 border-radius-100px pt-15px pb-15px ps-45px pe-45px md-ps-20px md-pe-20px border border-color-transparent-white-very-light fs-22 text-white text-md-start text-center" data-anime='{"opacity": [0,1], "duration": 4000, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <span class="d-inline-block border-end sm-border-end-0 pe-40px me-40px sm-pe-0 sm-me-0 border-color-transparent-white-very-light"><span class="fw-700">4</span> Agent types</span>
+                        <span class="d-inline-block"><span class="fw-700">100%</span> Data Privacy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        <!-- start section -->
+        <section id="about" class="cover-background pb-0" style="background-image: url('assets/images/bg-03.jpg');">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-5 col-lg-6 col-md-12 last-paragraph-no-margin order-lg-1 order-2" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <span class="text-white fw-600 mb-15px text-uppercase d-inline-block fs-14 ls-1px border-bottom border-color-transparent-white-very-light">Why Vector Pool?</span>
+                        <h3 class="fw-600 text-white w-90 xl-w-100 ls-minus-1px">Your data, your rules. Create exclusive AI agents that work only for you.</h3>
+                        <p class="w-95 xl-w-100 text-white">Vector Pool offers a complete solution for businesses seeking innovation and efficiency through Artificial Intelligence. Each client gets their own private AI agent with exclusive access to their data. No data sharing between users, no compromises on privacy.</p>
+                        <ul class="p-0 mb-20px mt-15px list-style-01">
+                            <li class="border-color-transparent-white-light text-white d-flex align-items-center pt-20px pb-20px">
+                                <div class="feature-box-icon feature-box-icon-rounded w-40px h-40px rounded-circle bg-light-gray me-20px text-center d-flex align-items-center justify-content-center flex-shrink-0"><i class="fa-solid fa-check fs-14 text-base-color"></i></div>Exclusive AI agents with private data access
+                            </li>
+                            <li class="border-color-transparent-white-light text-white d-flex align-items-center pt-20px pb-20px">
+                                <div class="feature-box-icon feature-box-icon-rounded w-40px h-40px rounded-circle bg-light-gray me-20px text-center d-flex align-items-center justify-content-center flex-shrink-0"><i class="fa-solid fa-check fs-14 text-base-color"></i></div>Complete data privacy and security
+                            </li>
+                            <li class="border-color-transparent-white-light text-white d-flex align-items-center pt-20px pb-20px">
+                                <div class="feature-box-icon feature-box-icon-rounded w-40px h-40px rounded-circle bg-light-gray me-20px text-center d-flex align-items-center justify-content-center flex-shrink-0"><i class="fa-solid fa-check fs-14 text-base-color"></i></div>Custom models for your specific needs
+                            </li>
+                            <li class="border-color-transparent-white-light text-white d-flex align-items-center pt-20px pb-20px">
+                                <div class="feature-box-icon feature-box-icon-rounded w-40px h-40px rounded-circle bg-light-gray me-20px text-center d-flex align-items-center justify-content-center flex-shrink-0"><i class="fa-solid fa-check fs-14 text-base-color"></i></div>Reward system with token staking
+                            </li>
+                        </ul>
+                        <a href="#agents" class="btn btn-large btn-base-color btn-box-shadow btn-rounded btn-switch-text inner-link">
+                            <span>
+                                <span class="btn-double-text" data-text="Explore our agents">Explore our agents</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-xl-7 col-lg-6 col-md-12 order-lg-2 order-1 md-mb-15px md-ps-70px sm-ps-40px" data-anime='{ "el": "childs", "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'> 
+                        <img src="assets/images/machine-learning/machine-learning-icon-17.svg" width="695" data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)" alt="Vector Pool AI Platform" class="border-radius-10px box-shadow-quadruple-large">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+         <!-- start section -->
+        <section id="agents" class="cover-background" style="background-image:url('assets/images/bg-05.jpg');">
+            <div class="container">
+                <div class="row text-center mb-3">
+                    <div class="col">
+                        <h3 class="fw-600 mb-10px text-white">Exclusive AI Agents</h3>
+                        <p>Each agent is uniquely yours, with private access to your data</p>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2" data-anime='{ "el": "childs", "translateY": [0, 0], "perspective": [1200,1200], "scale": [1.1, 1], "rotateX": [50, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                     <!-- start agent item -->
+                     <div class="col icon-with-text-style-04 transition-inner-all mb-30px">
+                        <div class="feature-box bg-gradient-gray-light-dark-transparent border-radius-10px h-100 p-16 lg-p-13 box-shadow-quadruple-large box-shadow-quadruple-large-hover overflow-hidden">
+                            <div class="feature-box-icon feature-box-icon-rounded bg-light-gray w-110px h-110px rounded-circle mb-25px box-shadow-medium">
+                                <img class="rounded-circle w-90px h-90px" src="assets/images/circle-1.svg" alt="Agent 1">
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="d-inline-block text-white fw-600 fs-18 mb-5px">Starter Agent</span>
+                                <p>Perfect for beginners, this agent provides essential AI capabilities while maintaining complete data privacy. Start your AI journey with confidence.</p>
+                                <div class="agent-stats mt-4">
+                                    <div class="d-flex justify-content-between mb-2 align-items-center">
+                                        <span class="text-white">Data Privacy</span>
+                                        <span>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2 align-items-center">
+                                        <span class="text-white">Reasoning</span>
+                                        <span>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-half text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2 align-items-center">
+                                        <span class="text-white">Speed</span>
+                                        <span>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-half text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-white">Context</span>
+                                        <span>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-2">
+                                        <span class="text-white">Price</span>
+                                        <span>
+                                            <i class="bi bi-currency-dollar text-success"></i>
+                                            <i class="bi bi-currency-dollar text-transparent"></i>
+                                            <i class="bi bi-currency-dollar text-transparent"></i>
+                                            <i class="bi bi-currency-dollar text-transparent"></i>
+                                            <i class="bi bi-currency-dollar text-transparent"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-box-overlay bg-very-light-gray"></div>
+                        </div>  
+                    </div>
+                    <!-- end agent item -->
+                    <!-- start agent item -->
+                    <div class="col icon-with-text-style-04 transition-inner-all mb-30px">
+                        <div class="feature-box bg-gradient-gray-light-dark-transparent border-radius-10px h-100 p-16 lg-p-13 box-shadow-quadruple-large box-shadow-quadruple-large-hover overflow-hidden">
+                            <div class="feature-box-icon feature-box-icon-rounded bg-light-gray w-110px h-110px rounded-circle mb-25px box-shadow-medium">
+                                <img class="rounded-circle w-90px h-90px" src="assets/images/circle-2.svg" alt="Agent 2">
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="d-inline-block text-white fw-600 fs-18 mb-5px">Basic Agent</span>
+                                <p>Your private AI assistant for basic tasks and customer service. Data stays exclusively within your organization.</p>
+                                <div class="agent-stats mt-4">
+                                    <div class="d-flex justify-content-between mb-2 align-items-center">
+                                        <span class="text-white">Data Privacy</span>
+                                        <span>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2 align-items-center">
+                                        <span class="text-white">Reasoning</span>
+                                        <span>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2 align-items-center">
+                                        <span class="text-white">Speed</span>
+                                        <span>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-white">Context</span>
+                                        <span>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-half text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-2">
+                                        <span class="text-white">Price</span>
+                                        <span>
+                                            <i class="bi bi-currency-dollar text-success"></i>
+                                            <i class="bi bi-currency-dollar text-success"></i>
+                                            <i class="bi bi-currency-dollar text-transparent"></i>
+                                            <i class="bi bi-currency-dollar text-transparent"></i>
+                                            <i class="bi bi-currency-dollar text-transparent"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-box-overlay bg-very-light-gray"></div>
+                        </div>  
+                    </div>
+                    <!-- end agent item -->
+                    <!-- start agent item -->
+                    <div class="col icon-with-text-style-04 transition-inner-all mb-30px">
+                        <div class="feature-box bg-gradient-gray-light-dark-transparent border-radius-10px h-100 p-16 lg-p-13 box-shadow-quadruple-large box-shadow-quadruple-large-hover overflow-hidden">
+                            <div class="feature-box-icon feature-box-icon-rounded bg-light-gray w-110px h-110px rounded-circle mb-25px box-shadow-medium">
+                                <img class="rounded-circle w-90px h-90px" src="assets/images/circle-3.svg" alt="Agent 3">
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="d-inline-block text-white fw-600 fs-18 mb-5px">Professional Agent</span>
+                                <p>Advanced AI with exclusive access to your business data. Perfect for specialized analysis and support.</p>
+                                <div class="agent-stats mt-4">
+                                    <div class="d-flex justify-content-between mb-2 align-items-center">
+                                        <span class="text-white">Data Privacy</span>
+                                        <span>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2 align-items-center">
+                                        <span class="text-white">Reasoning</span>
+                                        <span>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-half text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2 align-items-center">
+                                        <span class="text-white">Speed</span>
+                                        <span>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-half text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-white">Context</span>
+                                        <span>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-half text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-white">Price</span>
+                                        <span>
+                                            <i class="bi bi-currency-dollar text-success"></i>
+                                            <i class="bi bi-currency-dollar text-success"></i>
+                                            <i class="bi bi-currency-dollar text-success"></i>
+                                            <i class="bi bi-currency-dollar text-transparent"></i>
+                                            <i class="bi bi-currency-dollar text-transparent"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-box-overlay bg-very-light-gray"></div>
+                        </div>  
+                    </div>
+                    <!-- end agent item -->
+                    <!-- start agent item -->
+                    <div class="col icon-with-text-style-04 transition-inner-all mb-30px">
+                        <div class="feature-box bg-gradient-gray-light-dark-transparent border-radius-10px h-100 p-16 lg-p-13 box-shadow-quadruple-large box-shadow-quadruple-large-hover overflow-hidden">
+                            <div class="feature-box-icon feature-box-icon-rounded bg-light-gray w-110px h-110px rounded-circle mb-25px box-shadow-medium">
+                                <img class="rounded-circle w-90px h-90px" src="assets/images/circle-4.svg" alt="Agent 4">
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="d-inline-block text-white fw-600 fs-18 mb-5px">Enterprise Agent</span>
+                                <p>Maximum power with complete data isolation. Your exclusive AI for complex tasks and advanced analysis.</p>
+                                <div class="agent-stats mt-4">
+                                    <div class="d-flex justify-content-between mb-2 align-items-center">
+                                        <span class="text-white">Data Privacy</span>
+                                        <span>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2 align-items-center">
+                                        <span class="text-white">Reasoning</span>
+                                        <span>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2 align-items-center">
+                                        <span class="text-white">Speed</span>
+                                        <span>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-white">Context</span>
+                                        <span>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star-fill text-yellow"></i>
+                                            <i class="bi bi-star text-yellow"></i>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-white">Price</span>
+                                        <span>
+                                            <i class="bi bi-currency-dollar text-success"></i>
+                                            <i class="bi bi-currency-dollar text-success"></i>
+                                            <i class="bi bi-currency-dollar text-success"></i>
+                                            <i class="bi bi-currency-dollar text-success"></i>
+                                            <i class="bi bi-currency-dollar text-transparent"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-box-overlay bg-very-light-gray"></div>
+                        </div>  
+                    </div>
+                    <!-- end agent item -->     
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                        <div class="btn btn-large btn-base-color btn-rounded btn-box-shadow btn-switch-text">
+                            <span>
+                                <span class="btn-double-text" data-text="More models to come...">More models to come...</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        <!-- start section -->
+        <section  class="position-relative pb-12 overflow-hidden background-repeat" style="background-image:url('assets/images/bg-04.jpg');">
+            <div class="container">
+                <div class="row justify-content-center align-items-xl-start align-items-center lg-mb-5 sm-mb-0">
+                    <div class="col-lg-6 col-md-12 md-mb-50px position-relative"> 
+                        <div class="w-85" data-animation-delay="200" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)">
+                            <img src="assets/images/machine-learning/machine-learning-icon-12.svg" width="480" alt="" class="border-radius-6px w-100">
+                        </div>
+                        <div class="overflow-hidden position-absolute right-minus-40px bottom-0px lg-w-60 lg-right-minus-10px" data-animation-delay="100" data-bottom-top="transform: translateY(-20px)" data-top-bottom="transform: translateY(20px)">
+                            <img src="assets/images/machine-learning/machine-learning-icon-02.svg" width="350" alt="" class="border-radius-6px"/>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-6 col-md-12 offset-xl-1" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                        <span class="text-white fw-600 mb-15px text-uppercase d-inline-block fs-14 ls-1px border-bottom border-color-transparent-white-very-light">VPL Token Utility</span>
+                        <h3 class="text-white fw-600 mb-15px lg-w-80 md-w-100">Empower Your Machine Learning Journey with VPL</h3>
+                        <p>Unlock the true value of your VPL tokens and accelerate your access to advanced AI and machine learning solutions. Our platform offers multiple ways to maximize your tokens and fuel innovation:</p>
+                        <div class="mb-40px sm-mb-30px">
+                            <!-- start features box item -->
+                            <div class="icon-with-text-style-08 mb-10px">
+                                <div class="feature-box feature-box-left-icon-middle">
+                                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-light-gray rounded-circle me-15px">
+                                        <i class="fa-solid fa-check fs-15 text-base-color"></i> 
+                                    </div>
+                                    <div class="feature-box-content"> 
+                                        <span><b>Staking Pools:</b> Earn rewards and boost your machine learning power by staking VPL in exclusive pools.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end features box item -->
+                            <!-- start features box item -->
+                            <div class="icon-with-text-style-08 mb-10px">
+                                <div class="feature-box feature-box-left-icon-middle">
+                                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-light-gray rounded-circle me-15px">
+                                        <i class="fa-solid fa-check fs-15 text-base-color"></i> 
+                                    </div>
+                                    <div class="feature-box-content"> 
+                                        <span><b>Order Book Trading:</b> Trade VPL for instant liquidity and use your gains to contract AI solutions.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end features box item -->
+                            <!-- start features box item -->
+                            <div class="icon-with-text-style-08">
+                                <div class="feature-box feature-box-left-icon-middle">
+                                    <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px bg-light-gray rounded-circle me-15px">
+                                        <i class="fa-solid fa-check fs-15 text-base-color"></i> 
+                                    </div>
+                                    <div class="feature-box-content"> 
+                                        <span><b>Affiliate Program:</b> Refer and earn VPL every time your network invests in machine learning with us.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end features box item -->
+                        </div>
+                        <a href="#buy-crypto" class="btn btn-large btn-base-color btn-rounded btn-switch-text btn-box-shadow inner-link">
+                            <span>
+                                <span class="btn-double-text" data-text="Discover VPL">Discover VPL</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="position-absolute bottom-minus-70px xxl-bottom-minus-40px md-bottom-minus-20px left-0px right-0px text-center fs-300 xxl-fs-200 xl-fs-180 md-fs-140 d-none d-md-block text-very-light-gray ls-minus-8px fw-600 opacity-4">investment</div>
+        </section>
+        <!-- end section -->
+         <!-- start section -->
+        <section class="pt-25px pb-25px bg-base-color">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col swiper" data-slider-options='{ "slidesPerView": "auto", "spaceBetween":0, "centeredSlides": true, "speed": 12000, "loop": true, "pagination": { "el": ".slider-four-slide-pagination-2", "clickable": false }, "allowTouchMove": false, "autoplay": { "delay":1, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-four-slide-next-2", "prevEl": ".slider-four-slide-prev-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
+                        <div class="swiper-wrapper swiper-width-auto marquee-slide">
+                            <!-- start client item -->
+                            <div class="swiper-slide">
+                                <div class="fs-22 sm-fs-20 fw-500 text-dark-gray"><span class="w-30px border border-1 border-color-dark-gray d-inline-block align-middle ms-60px me-60px md-ms-30px md-me-30px opacity-2"></span>Transform your business with custom AI solutions</div>
+                            </div>
+                            <!-- end client item --> 
+                            <!-- start client item -->
+                            <div class="swiper-slide">
+                                <div class="fs-22 sm-fs-20 fw-500 text-dark-gray"><span class="w-30px border border-1 border-color-dark-gray d-inline-block align-middle ms-60px me-60px md-ms-30px md-me-30px opacity-2"></span>Exclusive AI agents with private data access</div>
+                            </div>
+                            <!-- end client item -->
+                            <!-- start client item -->
+                            <div class="swiper-slide">
+                                <div class="fs-22 sm-fs-20 fw-500 text-dark-gray"><span class="w-30px border border-1 border-color-dark-gray d-inline-block align-middle ms-60px me-60px md-ms-30px md-me-30px opacity-2"></span>Earn rewards while supporting AI innovation</div>
+                            </div>
+                            <!-- end client item -->
+                            <!-- start client item -->
+                            <div class="swiper-slide">
+                                <div class="fs-22 sm-fs-20 fw-500 text-dark-gray"><span class="w-30px border border-1 border-color-dark-gray d-inline-block align-middle ms-60px me-60px md-ms-30px md-me-30px opacity-2"></span>Your data, your rules, your AI</div>
+                            </div>
+                            <!-- end client item --> 
+                            <!-- start client item -->
+                            <div class="swiper-slide">
+                                <div class="fs-22 sm-fs-20 fw-500 text-dark-gray"><span class="w-30px border border-1 border-color-dark-gray d-inline-block align-middle ms-60px me-60px md-ms-30px md-me-30px opacity-2"></span>Join the future of machine learning</div>
+                            </div>
+                            <!-- end client item --> 
+                            <!-- start client item -->
+                            <div class="swiper-slide">
+                                <div class="fs-22 sm-fs-20 fw-500 text-dark-gray"><span class="w-30px border border-1 border-color-dark-gray d-inline-block align-middle ms-60px me-60px md-ms-30px md-me-30px opacity-2"></span>Power your business with AI innovation</div>
+                            </div>
+                            <!-- end client item -->
+                            <!-- start client item -->
+                            <div class="swiper-slide">
+                                <div class="fs-22 sm-fs-20 fw-500 text-dark-gray"><span class="w-30px border border-1 border-color-dark-gray d-inline-block align-middle ms-60px me-60px md-ms-30px md-me-30px opacity-2"></span>Secure, private, and powerful AI solutions</div>
+                            </div>
+                            <!-- end client item -->
+                            <!-- start client item -->
+                            <div class="swiper-slide">
+                                <div class="fs-22 sm-fs-20 fw-500 text-dark-gray"><span class="w-30px border border-1 border-color-dark-gray d-inline-block align-middle ms-45px me-45px md-ms-30px md-me-30px opacity-2"></span>Unlock the power of machine learning</div>
+                            </div>
+                            <!-- end client item --> 
+                        </div> 
+                    </div>  
+                </div> 
+            </div>
+        </section>
+        <!-- end section -->
+         <!-- start section -->
+        <section id="staking" class="cover-background" style="background-image:url('assets/images/bg-02.jpg');">
+            <div class="container">
+                <div class="row text-center mb-3">
+                    <div class="col">
+                        <h3 class="fw-600 mb-10px text-white">Exclusive Staking Pools</h3>
+                        <p>Limited-time opportunity to earn rewards while supporting AI innovation</p>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center" data-anime='{ "el": "childs", "translateY": [0, 0], "perspective": [1200,1200], "scale": [1.1, 1], "rotateX": [50, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <!-- start staking pool item -->
+                    <div class="col icon-with-text-style-04 transition-inner-all md-mb-30px">
+                        <div class="feature-box bg-gradient-gray-light-dark-transparent border-radius-10px h-100 p-16 lg-p-13 box-shadow-quadruple-large box-shadow-quadruple-large-hover overflow-hidden">
+                            <div class="feature-box-icon feature-box-icon-rounded bg-light-gray w-110px h-110px rounded-circle mb-25px box-shadow-medium">
+                                <img class="rounded-circle w-90px h-90px" src="assets/images/machine-learning/machine-learning-icon-03.svg" alt="Visionary Pool">
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="d-inline-block text-white fw-600 fs-18 mb-5px">Visionary Pool</span>
+                                <p>Join the elite group with maximum rewards. Limited spots available!</p>
+                                <div class="staking-stats mt-4">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="text-white">Reward over Profit</span>
+                                        <span class="text-white">15%</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="text-white">Token Limit</span>
+                                        <span class="text-white">1M VPL</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <span class="text-white">Status</span>
+                                        <span class="text-white">Limited</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-box-overlay bg-very-light-gray"></div>
+                        </div>  
+                    </div>
+                    <!-- end staking pool item -->
+                    <!-- start staking pool item -->
+                    <div class="col icon-with-text-style-04 transition-inner-all md-mb-30px">
+                        <div class="feature-box bg-gradient-gray-light-dark-transparent border-radius-10px h-100 p-16 lg-p-13 box-shadow-quadruple-large box-shadow-quadruple-large-hover overflow-hidden">
+                            <div class="feature-box-icon feature-box-icon-rounded bg-light-gray w-110px h-110px rounded-circle mb-25px box-shadow-medium">
+                                <img class="rounded-circle w-90px h-90px" src="assets/images/machine-learning/machine-learning-icon-08.svg" alt="Early Adopters Pool">
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="d-inline-block text-white fw-600 fs-18 mb-5px">Early Supportes Pool</span>
+                                <p>Perfect balance of rewards and flexibility. Don't miss this opportunity!</p>
+                                <div class="staking-stats mt-4">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="text-white">Reward over Profit</span>
+                                        <span class="text-white">10%</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="text-white">Token Limit</span>
+                                        <span class="text-white">2M VPL</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <span class="text-white">Status</span>
+                                        <span class="text-white">Soon</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-box-overlay bg-very-light-gray"></div>
+                        </div>  
+                    </div>
+                    <!-- end staking pool item -->
+                    <!-- start staking pool item -->
+                    <div class="col icon-with-text-style-04 transition-inner-all">
+                        <div class="feature-box bg-gradient-gray-light-dark-transparent border-radius-10px h-100 p-16 lg-p-13 box-shadow-quadruple-large box-shadow-quadruple-large-hover overflow-hidden">
+                            <div class="feature-box-icon feature-box-icon-rounded bg-light-gray w-110px h-110px rounded-circle mb-25px box-shadow-medium">
+                                <img class="rounded-circle w-90px h-90px" src="assets/images/machine-learning/machine-learning-icon-09.svg" alt="AI Profit Pool">
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="d-inline-block text-white fw-600 fs-18 mb-5px">AI Profit Pool</span>
+                                <p>Flexible staking with no lock period. Perfect for active traders.</p>
+                                <div class="staking-stats mt-4">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="text-white">Reward over Profit</span>
+                                        <span class="text-white">5%</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="text-white">Token Limit</span>
+                                        <span class="text-white">Unlimited</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <span class="text-white">Status</span>
+                                        <span class="text-white">Soon</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-box-overlay bg-very-light-gray"></div>
+                        </div>  
+                    </div>
+                    <!-- end staking pool item -->
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                        <p class="text-white mb-4">Unlock your tokens anytime to use for machine learning or trading. Note: Once withdrawn from Visionary or Early Adopters pools, tokens can only be staked in the AI Profit pool.</p>
+                        <a href="#" class="btn btn-large btn-base-color btn-rounded btn-box-shadow btn-switch-text">
+                            <span>
+                                <span class="btn-double-text" data-text="Join Staking Now">Join Staking Now</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        <!-- start section -->
+        <section id="affiliate" class="cover-background" style="background-image:url('assets/images/bg-05.jpg');">
+            <div class="container">
+                <div class="row text-center mb-3">
+                    <div class="col">
+                        <h3 class="fw-600 mb-10px text-white">Affiliate Program</h3>
+                        <p>Share our platform and earn VPL tokens with every successful referral</p>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center" data-anime='{ "el": "childs", "translateY": [0, 0], "perspective": [1200,1200], "scale": [1.1, 1], "rotateX": [50, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <!-- start affiliate feature item -->
+                    <div class="col icon-with-text-style-04 transition-inner-all md-mb-30px">
+                        <div class="feature-box bg-gradient-gray-light-dark-transparent border-radius-10px h-100 p-16 lg-p-13 box-shadow-quadruple-large box-shadow-quadruple-large-hover overflow-hidden">
+                            <div class="feature-box-icon feature-box-icon-rounded bg-light-gray w-110px h-110px rounded-circle mb-25px box-shadow-medium">
+                                <i class="fa-solid fa-link fs-40 text-base-color"></i>
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="d-inline-block text-white fw-600 fs-18 mb-5px">Personal Referral Links</span>
+                                <p>Get your unique referral link and share it with your network. Track your referrals and earnings in real-time.</p>
+                            </div>
+                            <div class="feature-box-overlay bg-very-light-gray"></div>
+                        </div>  
+                    </div>
+                    <!-- end affiliate feature item -->
+                    <!-- start affiliate feature item -->
+                    <div class="col icon-with-text-style-04 transition-inner-all md-mb-30px">
+                        <div class="feature-box bg-gradient-gray-light-dark-transparent border-radius-10px h-100 p-16 lg-p-13 box-shadow-quadruple-large box-shadow-quadruple-large-hover overflow-hidden">
+                            <div class="feature-box-icon feature-box-icon-rounded bg-light-gray w-110px h-110px rounded-circle mb-25px box-shadow-medium">
+                                <i class="fa-solid fa-percent fs-40 text-base-color"></i>
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="d-inline-block text-white fw-600 fs-18 mb-5px">Generous Commissions</span>
+                                <p>Earn up to 5% commission in VPL tokens when your referrals purchase our machine learning products.</p>
+                            </div>
+                            <div class="feature-box-overlay bg-very-light-gray"></div>
+                        </div>  
+                    </div>
+                    <!-- end affiliate feature item -->
+                    <!-- start affiliate feature item -->
+                    <div class="col icon-with-text-style-04 transition-inner-all">
+                        <div class="feature-box bg-gradient-gray-light-dark-transparent border-radius-10px h-100 p-16 lg-p-13 box-shadow-quadruple-large box-shadow-quadruple-large-hover overflow-hidden">
+                            <div class="feature-box-icon feature-box-icon-rounded bg-light-gray w-110px h-110px rounded-circle mb-25px box-shadow-medium">
+                                <i class="fa-solid fa-coins fs-40 text-base-color"></i>
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span class="d-inline-block text-white fw-600 fs-18 mb-5px">Flexible Rewards</span>
+                                <p>Use your VPL tokens to purchase machine learning products, stake them for passive income, or trade them on the market.</p>
+                            </div>
+                            <div class="feature-box-overlay bg-very-light-gray"></div>
+                        </div>  
+                    </div>
+                    <!-- end affiliate feature item -->
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                        <a href="#" class="btn btn-large btn-base-color btn-rounded btn-box-shadow btn-switch-text">
+                            <span>
+                                <span class="btn-double-text" data-text="Join Affiliate Program">Join Affiliate Program</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        <!-- start section -->
+        <section id="market" class="cover-background overflow-visible md-pb-30px" style="background-image:url('assets/images/bg-01.jpg');">
+            <div class="position-absolute left-minus-35px top-minus-100px d-none d-xl-inline-block" data-parallax-liquid="true" data-parallax-transition="2" data-parallax-position="top">
+                <img src="assets/images/machine-learning/machine-learning-icon-04.svg" width="248" alt="" data-bottom-top="transform: rotate(-30deg)" data-top-bottom="transform:rotate(10deg)">
+            </div>
+            <div class="position-absolute mt-5 right-120px xl-right-30px d-none d-xl-inline-block" data-parallax-liquid="true" data-parallax-transition="2" data-parallax-position="bottom">
+                <img src="assets/images/machine-learning/machine-learning-icon-05.svg" width="177" alt="" data-bottom-top="transform: rotate(-60deg)" data-top-bottom="transform:rotate(60deg)">
+            </div>
+            <div class="container">
+                <div class="row align-items-center justify-content-center text-lg-start text-center">
+                    <div class="col-xl-5 col-lg-6 col-md-12 last-paragraph-no-margin mb-5 lg-mb-30px" data-anime='{ "el": "childs", "opacity": [0, 1], "rotateY": [-90, 0], "rotateZ": [-10, 0], "translateY": [80, 0], "translateZ": [50, 0], "staggervalue": 200, "duration": 900, "delay": 300, "easing": "easeOutCirc" }'>
+                        <span class="text-white fw-600 mb-15px text-uppercase d-inline-block fs-14 ls-1px border-bottom border-color-transparent-white-very-light">Simple Token Trading</span>
+                        <h3 class="fw-600 ls-minus-2px text-white w-90 xl-w-100 mb-15px">Trade tokens as easily as <span class="highlight-separator z-index-1 fw-600 pb-10px text-white" data-shadow-animation="true" data-animation-delay="500">exchanging currency<span><img src="assets/images/highlight-separator-02.svg" alt="" class="h-25px" data-no-retina=""></span></span></h3>
+                        <p class="w-95 sm-w-100">Choose between instant market orders or set your own price in our order book. Just like a currency exchange, but with more control and flexibility.</p>
+                        <!-- <div class="mt-30px">
+                            <a href="#" target="_blank" class="me-25px">
+                                <img src="assets/images/google-play-icon.svg" alt="">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="assets/images/app-store.svg" alt="">
+                            </a>
+                        </div> -->
+                    </div>
+                    <div class="col-xl-7 col-lg-6 col-md-12 md-ps-10" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'> 
+                        <img src="assets/images/machine-learning/machine-learning-icon-11.svg" width="684" data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+         <!-- start section -->
+        <section id="buy-crypto" class="cover-background overflow-visible" style="background-image: url('assets/images/bg-02.jpg');">
+            <div class="container">
+                <div class="row text-center mb-3">
+                    <div class="col">
+                        <h3 class="fw-600 mb-10px text-white">Trade VPL/USDT</h3>
+                        <p>Multiple payment options and flexible trading</p>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-box bg-gradient-gray-light-dark-transparent border-radius-10px p-4 h-100">
+                            <div class="feature-box-icon feature-box-icon-rounded bg-light-gray w-60px h-60px rounded-circle mb-3">
+                                <i class="fa-solid fa-credit-card fs-24 text-base-color"></i>
+                            </div>
+                            <h4 class="text-white mb-3">Easy Payment Options</h4>
+                            <p class="text-white">Purchase credits using PayPal, Stripe, or USDT. Choose the method that works best for you.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-box bg-gradient-gray-light-dark-transparent border-radius-10px p-4 h-100">
+                            <div class="feature-box-icon feature-box-icon-rounded bg-light-gray w-60px h-60px rounded-circle mb-3">
+                                <i class="fa-solid fa-globe fs-24 text-base-color"></i>
+                            </div>
+                            <h4 class="text-white mb-3">Global Transfers</h4>
+                            <p class="text-white">USDT enables fast, low-cost international transfers. Perfect for global business transactions.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="feature-box bg-gradient-gray-light-dark-transparent border-radius-10px p-4 h-100">
+                            <div class="feature-box-icon feature-box-icon-rounded bg-light-gray w-60px h-60px rounded-circle mb-3">
+                                <i class="fa-solid fa-chart-line fs-24 text-base-color"></i>
+                            </div>
+                            <h4 class="text-white mb-3">Order Book Trading</h4>
+                            <p class="text-white">Set your own buy/sell prices in our order book. Your order executes automatically when matched.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <div class="bg-gradient-gray-light-dark-transparent border-radius-10px p-4">
+                            <h4 class="text-white mb-3">How Order Book Trading Works</h4>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="d-flex align-items-start">
+                                        <div class="feature-box-icon feature-box-icon-rounded bg-light-gray w-40px h-40px rounded-circle me-3 flex-shrink-0 d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-arrow-down text-green fs-16"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="text-white mb-2">Buy Orders</h5>
+                                            <p class="text-white mb-0">Place a buy order at your desired price. When a seller matches your price, the trade executes automatically.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="d-flex align-items-start">
+                                        <div class="feature-box-icon feature-box-icon-rounded bg-light-gray w-40px h-40px rounded-circle me-3 flex-shrink-0 d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-arrow-up text-red fs-16"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="text-white mb-2">Sell Orders</h5>
+                                            <p class="text-white mb-0">Set your sell price. Your tokens will be sold when a buyer matches your asking price.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <div class="col-12 text-white">Convert VPL to USDT: <div class="highlight-separator z-index-1 fw-600 pb-10px" data-shadow-animation="true" data-animation-delay="500">Transform your tokens into global liquidity<span><img src="assets/images/highlight-separator-small.svg" alt="" class="h-25px"></span></div></div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        <!-- start footer -->
+        <footer class="bg-gradient-black-bottom-transparent pb-30px">
+            <div class="container">
+                <div class="row justify-content-center mb-4 md-mb-7 sm-mb-40px">
+                    <!-- start footer column -->
+                    <div class="col-6 col-lg-2 col-sm-3 order-sm-1 md-mb-40px xs-mb-30px">
+                        <a href="#home" class="footer-logo d-inline-block inner-link"><img src="assets/images/logo-light.svg" alt="Vector Pool Logo"></a>
+                    </div>
+                    <!-- end footer column -->
+                    <!-- start footer column -->
+                    <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-3 order-lg-2">
+                        <span class="fs-17 fw-500 d-block text-white mb-5px">Company</span>
+                        <ul>
+                            <li><a href="#about" class="inner-link">About us</a></li>
+                            <li><a href="#agents" class="inner-link">AI Agents</a></li>
+                            <li><a href="#staking" class="inner-link">Staking</a></li>
+                            <li><a href="#market" class="inner-link">Market</a></li>
+                        </ul>
+                    </div>
+                    <!-- end footer column -->
+                    <!-- start footer column -->
+                    <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-4 order-lg-3">
+                        <span class="fs-17 fw-500 d-block text-white mb-5px">Features</span>
+                        <ul>                           
+                            <li><a href="#market" class="inner-link">Token Usage</a></li>
+                            <li><a href="#staking" class="inner-link">Staking Pools</a></li>
+                            <li><a href="#affiliate" class="inner-link">Affiliate Program</a></li>
+                            <!-- <li><a href="#about" class="inner-link">Agents</a></li> -->
+                        </ul>
+                    </div>
+                    <!-- end footer column -->
+                    <!-- start footer column -->
+                    <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-5 order-lg-4">
+                        <span class="fs-17 fw-500 d-block text-white mb-5px">Need help?</span>
+                        <span class="d-inline-flex w-100">Call us directly</span>
+                        <a href="tel:12345678910" class="text-white d-inline-flex mb-5px">+351 916 930 511</a>
+                        <span class="d-inline-flex w-100">Need support?</span>
+                        <a href="mailto:ai@vectorpool.ai" class="text-white text-decoration-line-bottom d-inline-block">ai@vectorpool.ai</a>
+                    </div>
+                    <!-- end footer column -->  
+                    <!-- start footer column -->
+                    <div class="col-sm-9 col-lg-4 ps-30px md-ps-15px md-mb-40px xs-mb-0 order-sm-2 order-lg-5">
+                        <span class="fs-17 fw-500 d-block text-white mb-5px">Subscribe to newsletter</span>
+                        <p class="mb-20px">Subscribe to our newsletter to get the latest news and updates.</p>
+                        <div class="d-inline-block w-100 newsletter-style-02 position-relative mb-15px">
+                            <form action="#" method="post" class="position-relative w-100">
+                                <input class="input-small bg-transparent border-color-transparent-white-very-light w-100 form-control required" type="email" name="email" placeholder="Enter your email...">
+                                <input type="hidden" name="redirect" value="">
+                                <button type="submit" class="btn pe-20px text-base-color fs-12 fw-500 lg-ps-15px lg-pe-15px submit" aria-label="submit">Submit <i class="feather icon-feather-arrow-right submit"></i></button>
+                                <div class="form-results border-radius-4px pt-5px pb-5px ps-15px pe-15px fs-14 lh-22 mt-10px w-100 text-center position-absolute d-none"></div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- end footer column -->                        
+                </div>
+                <div class="row footer-bottom border-top border-color-transparent-white-light pt-30px align-items-center">
+                    <div class="col-lg-12 text-center">
+                        <span class="fs-14 d-block lh-22">© 2025 Vector Pool. All rights reserved.</span>
+                    </div>
+                    <!-- <div class="col-lg-9 text-center text-lg-start">
+                        <span class="fs-14 d-block lh-22">This site is protected by reCAPTCHA and the Google <a href="#" class="text-white text-decoration-line-bottom">privacy policy</a> and <a href="#" class="text-white text-decoration-line-bottom">terms of service</a> apply. You must not use this website if you disagree with any of these website standard terms and conditions.</span>
+                    </div>
+                    <div class="col-lg-3 text-lg-end text-center md-mt-15px">
+                        <a href="#" class="d-inline-block me-15px xxl-me-0 align-middle"><img src="assets/images/payment-icon-01.png" alt="Payment Method 1"></a>
+                        <a href="#" class="d-inline-block me-15px xxl-me-0 align-middle"><img src="assets/images/payment-icon-02.png" alt="Payment Method 2"></a>
+                        <a href="#" class="d-inline-block align-middle"><img src="assets/images/payment-icon-03.png" alt="Payment Method 3"></a>
+                    </div> -->
+                </div>
+            </div> 
+        </footer>
+        <!-- end footer -->
+        <!-- start scroll simple -->
+        <div class="scroll-progress scroll-simple d-none d-xl-block">
+            <a href="#" class="scroll-top" aria-label="scroll">
+                <i class="feather icon-feather-arrow-up text-black"></i>
+            </a>
+        </div>
+        <!-- end scroll simple -->
+        <!-- javascript libraries -->
+        <script type="text/javascript" src="assets/js/jquery.js"></script>
+        <script type="text/javascript" src="assets/js/vendors.min.js"></script>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+    </body>
+</html>
